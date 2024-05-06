@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+    font-family:"poppins" sans-serif;
+}
+body {
+  height:100vh;
+  width:100%;
+    background:linear-gradient(45deg, #d2001a,#7462ff,#f48e21,#23d5ab);
+    background-size: 300% 300%;
+    animation:color 12s ease-in-out infinite;
+
+    
+}
+.container{
+    width:min(60%, 28.12em);
+    position:absolute;
+    transform: translate(-50%, -50%);
+    top :50%;
+    left :50%;
+    
+}
+.container h1 {
+  font-size: 60px;
+  font-weight: bolder;
+  font-family: 'pacifico',cursive;
+  text-shadow:2px 2px 4px #000;
+  color:#333;
+  animation:color 6s infinite;
+  
+
+}
+@keyframes color{
+  0%{color: orange}
+  10%{color: purple}
+  20%{color:red}
+  30%{color:cadetblue}
+  40%{color:yellow}
+  50%{color: greenyellow}
+  60%{color:mediumblue}
+  
+
+}
+  .container * {
+    border:none;
+    outline: none;
+
+  }
+  .input-wrapper{
+    background-color: #400eca;
+     padding:1.87em 1.5em;
+     border-radius: 0.5em;
+     box-shadow:0 0.93em 1.25em rgba ( 0,0,0,0.03);
+     margin-bottom: 3.12em;
+     display:grid;
+     grid-template-columns:9fr 3fr;
+     gap: 1em;
+     border:0.2em  solid orange;
+
+  }
+  input, button {
+    font-weight: 500;
+    border-radius: 0.13em;
+  }
+  input{
+    background-color: #ffff;
+    color:#080808;
+    padding: 1.2em 1.25em;
+    font-size: 1.20em;
+  }
+  button{
+  background-color:rgb(48, 131, 169);
+  color:#ffff;
+  border-radius: 5%;
+  font-size: 15px;
+
+  }
+  .output-wrapped{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    column-gap:4%;
+
+  }
+  .output-wrapped div {
+    height:6.25em;
+    width:6.25em;
+    background-color:rgb(78, 67, 234);
+    border-radius: 0.32em;
+    border:0.2em  double rgb(227, 227, 101);
+    color:#080808;
+    display:grid;
+    place-items: center;
+    padding:1.20em 0;
+    box-shadow: 0 0.93em 1,25em rgba(77, 160, 160, 0.3);
+  }
+  span {
+    font-size: 1.87em;
+    font-weight: 500;
+  }
+  p {
+    font-size: 1.56em;
+    color: #0f0404;
+    font-weight: 400;
+    
+  }
+ 
